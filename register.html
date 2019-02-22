@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML5 Tetser</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">Services</a>
+                <ul>
+                    <li><a href="#">Designing</a></li>
+                    <li><a href="#">Consultation</a></li>
+                    <li><a href="#">Therapy</a></li>
+                    <li><a href="#">Training</a></li>
+                </ul>
+            </li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="about.html">Contact Us</a>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Email</a></li>
+                    <li><a href="#">Telephone</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <a href="register.html">Register</a>
+            </li>
+            <li>
+                <a href="login.html">Login</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <div id="message-box" style="width:60%; margin: 0 auto; padding: 20px; display: none;"></div>
+        <div class="form">
+            <form action="main.html" name="register" onsubmit="event.preventDefault(); return validate();" autocomplete="off" novalidate>
+                <input type="text" name="first_name" placeholder="First Name...">
+                <input type="text" name="middle_name" placeholder="Middle Name...">
+                <input type="text" name="last_name" placeholder="Last Name...">
+                <input type="email" name="email" placeholder="Email...">
+
+                <select name="faculty" id="faculty">
+                    <option value="">-- Faculty... --</option>
+                    <option value="fist">Information Science Technology</option>
+                    <option value="law">School Of Law</option>
+                    <option value="agric">School Of Agriculture</option>
+                    <option value="spas">School of Pure and Applied Sciences</option>
+                    <option value="hs">Health Scinces</option>
+                    <option value="med">School of Medicine</option>
+                </select>
+
+                <select name="dept" id="dept">
+                    <option value="">-- Course... --</option>
+                    <option value="comp">Computer Science</option>
+                    <option value="info">Software Engineering</option>
+                    <option value="info">Applied Computer Science</option>
+                    <option value="info">Library IT</option>
+                </select>
+
+                <input type="text" name="regno" placeholder="Registration Number...">
+                <input type="password" name="fname" placeholder="Password...">
+                <input type="password" name="fname" placeholder="Confirm Password...">
+                <div class="form-btns">
+                    <button type="submit">Register</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="js/master.js"></script>
+    <script src="js/validation.js"></script>
+
+</body>
+
+</html>

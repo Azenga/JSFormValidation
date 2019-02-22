@@ -1,0 +1,93 @@
+header {
+    width: 100%;
+    height: 50px;
+    background: forestgreen;
+}
+
+
+/* Both the first and the second ul's in the navbar */
+
+header ul {
+    list-style: none;
+    text-align: center;
+}
+
+header ul li {
+    position: relative;
+    float: left;
+}
+
+header>ul>li>a {
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    display: block;
+}
+
+header>ul>li:hover>a {
+    background: rgb(101, 143, 38);
+}
+
+header>ul>li:hover>a:hover {
+    background: #000;
+}
+
+
+/* The first unordered list in the navbar */
+
+header ul:nth-child(1) {
+    width: 40%;
+    margin: 0 auto 0 30px;
+}
+
+header>ul:nth-child(1)>li {
+    width: 25%;
+}
+
+
+/* Second Unordered list in the navbar */
+
+header>ul:nth-child(2) {
+    width: 20%;
+    float: right;
+    margin: 0 20px 0 0;
+}
+
+header>ul:nth-child(2)>li {
+    width: 50%;
+}
+
+
+/* Drop Down List */
+
+header ul li ul {
+    display: block;
+    width: 100%;
+    /* Keeping it in line with parent li element */
+    position: absolute;
+    display: none;
+}
+
+header ul li ul li {
+    width: 100%;
+}
+
+header ul li ul li a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    text-align: center;
+    background: forestgreen;
+    color: #fff;
+}
+
+header ul li ul li:hover a {
+    background: rgb(101, 143, 38);
+}
+
+header ul li ul li:hover a:hover {
+    background: #000;
+}
